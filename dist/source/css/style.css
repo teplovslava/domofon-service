@@ -1179,14 +1179,19 @@ body{
     background-position: center right;
 }
 
-.qustions{
+.qustions {
     margin-left: 12.95%;
-    width: 72.05%;
+    width: 75.2%;
     padding-bottom: 254px;
 }
 
 .qustion-box{
    margin-bottom: 189px;
+}
+
+.display-none{
+    display: none;
+    height: 0;
 }
 
 .question__head{
@@ -1197,12 +1202,8 @@ body{
 }
 
 .qustion-list{
-	display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    gap: 71px;
-    height: 327px;
-    justify-content: space-between;
+    column-count: 2;
+    column-fill:inherit;
 }
 
 .qustion-name{
@@ -1220,10 +1221,11 @@ body{
 }
 
 
-.qustion-list__item{
-    width: 47.05%;
-    cursor: pointer;
 
+.qustion-list__item {
+    width: 92.6%;
+    cursor: pointer;
+    margin-bottom: 56px;
 }
 
 .qustion-list__item img{
@@ -1240,6 +1242,7 @@ body{
     font-size: 14px;
     line-height: 140%;
     max-width: 600px;
+    height: auto;
 }
 
 .active-qustion img{
@@ -1254,6 +1257,8 @@ body{
 .active-qustion{
     padding-bottom: 24px;
     border-bottom: 1px solid  #CBCBCB;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .active-qustion h4{
@@ -1266,7 +1271,7 @@ body{
 .qustion-bottom{
     background-color: #F6F6F6;
     align-items: center;
-    width: 102.85%;
+    width: 100%;
     position: relative;
 }
 
@@ -1293,7 +1298,7 @@ body{
     font-weight: 400;
     font-size: 48px;
     line-height: 140%;
-    margin-bottom: -15px;
+    margin-bottom: 5px;
 
 }
 
@@ -1318,15 +1323,16 @@ body{
 
 .question-bottom__main{
     margin-right: 23px;
+    width: 238px;
 }
 
-.question-form button{
+.question-form button {
     cursor: pointer;
     font-weight: 700;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.04em;
-    padding: 18px 52px;
+    padding: 18px;
     background-color: #21D091;
     color: #FFFFFF;
     transition: all .2s ease-in-out;
@@ -1362,8 +1368,8 @@ body{
     margin-right: 26px;
 }
 
-.footer{
-    margin-left: 7.95%;
+.footer {
+    margin-left: 13.15%;
     position: relative;
     padding-bottom: 120px;
 }
@@ -1579,9 +1585,6 @@ body{
 
 
 @media (max-width:1780px) {
-    .qustion-list {
-        height: 410px;
-    }
 
     .form-head {
         font-size: 12px;
@@ -1707,12 +1710,6 @@ body{
 
     .slider__non-active {
         max-width: 104px;
-    }
-
-    .qustion-list {
-
-        gap: 50px;
-        
     }
 
     .info-video {
@@ -1904,11 +1901,6 @@ body{
     .question__head {
         font-size: 46px;
         margin-bottom: 32px;
-    }
-
-    .qustion-list {
-        gap: 28px;
-       
     }
 
     .qustion-bottom__descr p {
@@ -2184,9 +2176,6 @@ body{
         font-size: 10px;
     }
 
-    .qustion-list {
-        gap: 25px;
-    }
 
     .catalog {
         width: 91.99%;
@@ -2343,9 +2332,6 @@ body{
         font-size: 10px;
     }
 
-    .qustion-list {
-        height: 227px;
-    }
 
     .qustion-bottom__descr h3 {
         font-size: 12px;
@@ -2458,6 +2444,7 @@ body{
         top: -25px;
         right: -3.5%;
     }
+
 
     .hero-form {
         margin-top: 0px;
@@ -2842,8 +2829,7 @@ body{
     }
 
     .qustion-list {
-        height: auto;
-        gap: 40px;
+        column-count: 1;
     }
 
     .qustion-list__item {
@@ -2986,16 +2972,21 @@ body{
     width: 96%;
 }
 
+.footer__form {
+    flex-direction: column;
+}
+
+.footer-form {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .form {
     width: 100%;
-    display: flex;
-
     margin-bottom: 16px;
 }
 
-.footer__form{
-    width: 100%;
-}
 
 .notice-form {
     align-self: end;
@@ -3015,11 +3006,6 @@ body{
     margin-bottom: 48px;
 }
 
-.footer-form {
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 .footer__bottom {
     width: 33.6%;
@@ -3173,7 +3159,7 @@ body{
     .input-form {
         padding: 20px 20px;
         font-size: 14px;
-        width: 50%;
+        width: 100%;
         flex: inherit;
     }
 
