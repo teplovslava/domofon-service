@@ -576,7 +576,7 @@ body{
     line-height: 140%;
     color: #000000;
     margin-bottom: 60px;
-    width: 57%;
+    width: 73%;
 }
 
 .install-text{
@@ -1621,6 +1621,10 @@ body{
     }
     .menu{
         background-image: none;
+    }
+
+    .install-head{
+        width: 85%;
     }
 }
 
@@ -3070,6 +3074,10 @@ body{
         left: 43%;
     }
 
+    .install-head {
+        width: 100%;
+    }
+
     .hero-catalog {
         width: 37.3%;
         height: 200px;
@@ -3341,6 +3349,10 @@ body{
     }
     .header-top{
         display: none;
+    }
+
+    .install-head {
+        font-size: 18px;
     }
 
     .header-bottom {
